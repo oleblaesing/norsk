@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>norsk</title>
+  </head>
+  <body>
+    <form id="form">
+      <span id="question"></span>
+      <input id="answer" required>
+      <span id="solution"></span>
+      <button>
+        accept
+      </button>
+      <button id="next" type="button">
+        next
+      </button>
+    </form>
+    <script>
+      const form = document.getElementById('form')
+      const question = document.getElementById('question')
+      const answer = document.getElementById('answer')
+      const solution = document.getElementById('solution')
+      const next = document.getElementById('next')
+      const german = 'german'
+      const norsk = 'norsk'
+      const languages = [german, norsk]
+      const words = [
+        { [german]: 'Hallo', [norsk]: 'Hei' },
+        { [german]: 'Danke', [norsk]: 'Takk' },
+        { [german]: 'Tschüss', [norsk]: 'Ha det' },
+      ]
+
+      const getRandomElement = list => list[Math.floor(Math.random() * list.length)]
+      const getOtherLanguage = (language) => {
+        if (language === german) {
+          return norsk
+        }
+
+        return german
+      }
+
+      let currentWord = null
+      let currentLanguage = null
+      const drawNext = () => {
+        currentWord = getRandomElement(words)
+        currentLanguage = getRandomElement(languages)
+        question.innerText = currentWord[currentLanguage]
+      }
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        e.stopPropagation()
+
+        solution.innerText = 'x'
+
+        if (answer.value.toLowerCase() === currentWord[getOtherLanguage(currentLanguage)].toLowerCase()) {
+          solution.innerText = '√'
+        }
+      })
+
+      next.addEventListener('click', drawNext)
+
+      drawNext()
+    </script>
+  </body>
+</html>
