@@ -44,9 +44,15 @@
       let currentWord = null
       let currentLanguage = null
       const drawNext = () => {
-        currentWord = getRandomElement(words)
-        currentLanguage = getRandomElement(languages)
-        question.innerText = currentWord[currentLanguage]
+        let nextWord = getRandomElement(words)
+
+        if ((currentWord !== null) && (currentWord.german === nextWord.german)) {
+          drawNext()
+        } else {
+          currentWord = nextWord
+          currentLanguage = getRandomElement(languages)
+          question.innerText = currentWord[currentLanguage]
+        }
       }
 
       form.addEventListener('submit', (e) => {
