@@ -48,14 +48,9 @@
       let currentWord = null
       let currentLanguage = null
       const drawNext = () => {
-        let nextWord = getRandomElement(words)
-
-        if ((currentWord !== null) && (currentWord.german === nextWord.german)) {
-          drawNext()
-        } else {
-          currentWord = nextWord
-          currentLanguage = getRandomElement(languages)
-        }
+        const pool = currentWord ? words.filter(word => word.german !== currentWord.german) : words
+        currentWord = getRandomElement(pool)
+        currentLanguage = getRandomElement(languages)
       }
 
       let pointsCounter = 0
