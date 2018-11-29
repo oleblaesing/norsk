@@ -13,6 +13,8 @@
       <button>
         accept
       </button>
+      <span id="points"></span>
+      <span id="missed"></span>
       <button id="next" type="button">
         next
       </button>
@@ -22,6 +24,8 @@
       const question = document.getElementById('question')
       const answer = document.getElementById('answer')
       const solution = document.getElementById('solution')
+      const points = document.getElementById('points')
+      const missed = document.getElementById('missed')
       const next = document.getElementById('next')
       const german = 'german'
       const norsk = 'norsk'
@@ -51,24 +55,46 @@
         } else {
           currentWord = nextWord
           currentLanguage = getRandomElement(languages)
-          question.innerText = currentWord[currentLanguage]
         }
       }
+
+      let pointsCounter = 0
+      let missedCounter = 0
+      let madeAPoint = false
 
       form.addEventListener('submit', (e) => {
         e.preventDefault()
         e.stopPropagation()
 
-        solution.innerText = 'x'
-
         if (answer.value.toLowerCase() === currentWord[getOtherLanguage(currentLanguage)].toLowerCase()) {
           solution.innerText = '√'
+
+          if (!madeAPoint) {
+            pointsCounter += 1
+            madeAPoint = true
+            points.innerText = pointsCounter
+          }
+        } else {
+          solution.innerText = 'x'
         }
       })
 
-      next.addEventListener('click', drawNext)
+      next.addEventListener('click', () => {
+        if (!madeAPoint) {
+          missedCounter += 1
+          madeAPoint = true
+          missed.innerText = missedCounter
+        }
+
+        madeAPoint = false
+        drawNext()
+        question.innerText = currentWord[currentLanguage]
+      })
 
       drawNext()
+      points.innerText = pointsCounter
+      missed.innerText = missedCounter
+      question.innerText = currentWord[currentLanguage]
     </script>
   </body>
 </html>
