@@ -219,6 +219,12 @@
           }
         } else {
           solution.innerHTML = `🧐 Falsch, eigentlich: <span>${currentWord[getOtherLanguage(currentLanguage)]}</span>`
+
+          if (!madeAPoint) {
+            missedCounter += 1
+            madeAPoint = true
+            missed.innerText = missedCounter
+          }
         }
 
         accept.innerText = 'Nächstes'
@@ -226,12 +232,6 @@
         accept.addEventListener('click', function next(e) {
           e.preventDefault()
           e.stopPropagation()
-
-          if (!madeAPoint) {
-            missedCounter += 1
-            madeAPoint = true
-            missed.innerText = missedCounter
-          }
 
           madeAPoint = false
           drawNext()
