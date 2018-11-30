@@ -16,6 +16,7 @@
       html,
       body {
         height: 100%;
+        min-height: 460px;
       }
 
       body {
@@ -148,7 +149,7 @@
         <span id="question"></span>
         <span id="language"></span>
       </div>
-      <input autocomplete="off" id="answer" placeholder="Dein Vorschlag?">
+      <input autocomplete="off" autofocus id="answer" placeholder="Dein Vorschlag?">
       <div id="solution"></div>
       <button id="accept">
         OK
@@ -231,6 +232,7 @@
           question.innerText = currentWord[currentLanguage]
           languageDisplay.innerText = getOtherLanguage(currentLanguage) === german ? 'auf Deutsch' : 'in Norsk'
           answer.value = ''
+          answer.focus()
           solution.innerText = 'Keine Tipps!'
           accept.innerText = 'OK'
 
