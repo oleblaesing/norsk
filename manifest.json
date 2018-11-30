@@ -1,0 +1,20 @@
+{
+  "name": "Norsk lære",
+  "short_name": "Norsk lære",
+  "start_url": "/norsk/index.html",
+  "display": "standalone",
+  "theme_color": "#4c96a8",
+  "background_color": "#fff",
+  "icons": [
+    {
+    "src": "/norsk/192x192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+    },
+    {
+    "src": "/norsk/512x512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+    }
+  ]
+}

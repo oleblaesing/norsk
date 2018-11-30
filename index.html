@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>norsk</title>
+    <title>Norsk lære</title>
+    <link rel="manifest" href="/norsk/manifest.json">
     <style>
       * {
         box-sizing: border-box;
@@ -160,6 +161,11 @@
         <span id="missed"></span>
       </div>
     </form>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+      }
+    </script>
     <script>
       const form = document.getElementById('form')
       const question = document.getElementById('question')
