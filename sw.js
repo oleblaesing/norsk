@@ -1,4 +1,4 @@
-// version 3
+// version 4
 
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open('myonsenuipwa').then(cache => cache.addAll([
