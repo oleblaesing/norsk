@@ -1,7 +1,7 @@
-// version 6
+// version 7
 
 self.addEventListener('install', function (e) {
-  e.waitUntil(caches.open('norsk').then(cache => cache.addAll([
+  e.waitUntil(caches.open('myonsenuipwa').then(cache => cache.addAll([
     '/norsk/index.html',
     '/norsk/manifest.json',
   ])))
