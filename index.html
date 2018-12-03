@@ -312,12 +312,12 @@
         { [german]: 'lieben', [norsk]: 'elske' },
         { [german]: 'tatsächlich', [norsk]: 'faktisk' },
         { [german]: 'eine Farbe', [norsk]: 'en farge' },
-        { [german]: 'voll (von)', [norsk]: 'full (av)' },
+        { [german]: 'voll', [norsk]: 'full' },
         { [german]: 'ein Pullover', [norsk]: 'en genser' },
         { [german]: 'grün', [norsk]: 'grønn' },
         { [german]: 'grå', [norsk]: 'grau' },
         { [german]: 'gelb', [norsk]: 'gul' },
-        { [german]: 'anhaben (etwas)', [norsk]: 'ha på seg' },
+        { [german]: 'anhaben', [norsk]: 'ha på seg' },
         { [german]: 'weiß', [norsk]: 'hvit' },
         { [german]: 'niemand', [norsk]: 'ingen' },
         { [german]: 'kalt', [norsk]: 'kald' },
@@ -395,7 +395,7 @@
           languageDisplay.innerText = getOtherLanguage(currentLanguage) === german ? 'auf Deutsch' : 'in Norsk'
           answer.value = ''
           answer.focus()
-          solution.innerText = 'Wörter in Klammern sind nur Hilfe'
+          solution.innerText = 'Keine Tipps!'
           accept.innerText = 'OK'
 
           accept.removeEventListener('click', next)
@@ -407,7 +407,7 @@
       missed.innerText = missedCounter
       question.innerText = currentWord[currentLanguage]
       languageDisplay.innerText = getOtherLanguage(currentLanguage) === german ? 'auf Deutsch' : 'in Norsk'
-      solution.innerText = 'Wörter in Klammern sind nur Hilfe'
+      solution.innerText = 'Keine Tipps!'
     </script>
   </body>
 </html>
