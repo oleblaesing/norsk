@@ -1,9 +1,13 @@
-// version 8
+// version 9
 
 self.addEventListener('install', function (e) {
-  e.waitUntil(caches.open('myonsenuipwa').then(cache => cache.addAll([
+  e.waitUntil(caches.open('norsk').then(cache => cache.addAll([
     '/norsk/index.html',
     '/norsk/manifest.json',
+    '/norsk/style.css',
+    '/norsk/update.js',
+    '/norsk/vocables.js',
+    '/norsk/main.js',
   ])))
 })
 

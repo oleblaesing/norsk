@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 460px;
+}
+
+body {
+  background-image: linear-gradient(145deg, #4C86A8, #59C9A5);
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 15px;
+}
+
+form#form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 290px;
+}
+
+button#update {
+  align-items: center;
+  align-self: center;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 7px 5px rgba(0, 0, 0, .2);
+  color: cornflowerblue;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 5px 15px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+button#update[hidden] {
+  display: none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+button#update svg {
+  animation: rotate 3s ease-in-out infinite both;
+  height: 30px;
+  padding: 5px;
+  width: 30px;
+}
+
+button#update p {
+  margin: 0 0 0 10px;
+}
+
+span#task,
+span#question,
+span#language {
+  display: block;
+  text-align: center;
+}
+
+span#task,
+span#language {
+  font-weight: lighter;
+}
+
+span#task {
+  margin-top: 30px;
+}
+
+span#question {
+  font-size: 1.3em;
+  margin: 5px 0;
+}
+
+span#language {
+  margin-bottom: 45px;
+}
+
+input#answer {
+  background-color: rgba(0, 0, 0, .2);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+input#answer::placeholder {
+  color: white;
+  font-weight: lighter;
+  opacity: .7;
+}
+
+input#answer:focus,
+input#answer:active {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .6);
+  outline: 0;
+}
+
+div#solution {
+  line-height: 1.4;
+  margin-bottom: 30px;
+  min-height: 30px;
+  text-align: center;
+}
+
+div#solution span {
+  font-weight: bold;
+}
+
+button#accept {
+  background-color: #eee;
+  border: none;
+  border-radius: 3px;
+  color: #0e5b6d;
+  font-size: 1.1em;
+  margin-bottom: 45px;
+  min-height: 36px;
+  padding: 7px 15px;
+  text-align: center;
+}
+
+button:focus,
+button:active {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, .2);
+  outline: 0;
+}
+
+div#score {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+span#points,
+span#missed {
+  align-items: center;
+  background-color: rgba(255, 255, 255, .6);
+  border: 5px solid;
+  border-radius: 40px;
+  color: rgb(76, 150, 168);
+  display: flex;
+  font-size: 1.4em;
+  height: 80px;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  width: 80px;
+}
+
+span#points {
+  border-color: #9CFC97;
+}
+
+span#missed {
+  border-color: #E0777D;
+}
