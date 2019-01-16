@@ -71,7 +71,7 @@ form.addEventListener('submit', (e) => {
 
     madeAPoint = false
     drawNext()
-    question.innerText = getRandomElement(currentWord[currentLanguage])
+    question.innerText = currentWord[currentLanguage][0]
     languageDisplay.innerText = getOtherLanguage(currentLanguage) === german ? 'auf Deutsch' : 'in Norsk'
     answer.value = ''
     answer.focus()
@@ -85,6 +85,6 @@ form.addEventListener('submit', (e) => {
 drawNext()
 points.innerText = pointsCounter
 missed.innerText = missedCounter
-question.innerText = getRandomElement(currentWord[currentLanguage])
+question.innerText = currentWord[currentLanguage][0]
 languageDisplay.innerText = getOtherLanguage(currentLanguage) === german ? 'auf Deutsch' : 'in Norsk'
 solution.innerText = 'Keine Tipps!'
