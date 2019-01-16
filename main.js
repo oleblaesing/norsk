@@ -10,6 +10,7 @@ const german = 'german'
 const norsk = 'norsk'
 const languages = [german, norsk]
 const words = vocables(german, norsk)
+let unsolvedWords = words
 
 const getRandomElement = list => list[Math.floor(Math.random() * list.length)]
 const getOtherLanguage = (language) => {
@@ -27,10 +28,10 @@ const isMatchingAnswer = answer => currentWord[getOtherLanguage(currentLanguage)
   .includes(answer.toLowerCase())
 
 const drawNext = () => {
-  let pool = words
+  let pool = unsolvedWords
 
   if (currentWord) {
-    pool = words.filter(x => x.german.join(';') !== currentWord.german.join(';'))
+    pool = unsolvedWords.filter(x => x.german.join(';') !== currentWord.german.join(';'))
   }
 
   currentWord = getRandomElement(pool)
@@ -47,6 +48,12 @@ form.addEventListener('submit', (e) => {
 
   if (isMatchingAnswer(answer.value)) {
     solution.innerText = '🎉 Korrekt!'
+
+    unsolvedWords = unsolvedWords.filter(x => x.german.join(';') !== currentWord.german.join(';'))
+
+    if (unsolvedWords.length === 1) {
+      unsolvedWords = words
+    }
 
     if (!madeAPoint) {
       pointsCounter += 1
