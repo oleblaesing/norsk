@@ -3,7 +3,7 @@ const vocables = (german, norsk) => [
   { [german]: ['arbeiten'], [norsk]: ['arbeide'] },
   { [german]: ['alle'], [norsk]: ['alle'] },
   { [german]: ['alle zusammen'], [norsk]: ['alle sammen'] },
-  { [german]: ['ein Au-pair'], [norsk]: ['en au pair'] },
+  { [german]: ['ein Au-pair', 'eine Au-pair', 'eine Au Pair'], [norsk]: ['en au pair'] },
   { [german]: ['nur'], [norsk]: ['bare'] },
   { [german]: ['ein Tag'], [norsk]: ['en dag'] },
   { [german]: ['sie'], [norsk]: ['de', 'hun'] },
@@ -31,7 +31,7 @@ const vocables = (german, norsk) => [
   { [german]: ['was', 'wie'], [norsk]: ['hva'] },
   { [german]: ['wer'], [norsk]: ['hvem'] },
   { [german]: ['wo'], [norsk]: ['hvor'] },
-  { [german]: ['pst!'], [norsk]: ['hysj!'] },
+  { [german]: ['pst!', 'Ruhe!'], [norsk]: ['hysj!'] },
   { [german]: ['in'], [norsk]: ['i'] },
   { [german]: ['Italien'], [norsk]: ['Italia'] },
   { [german]: ['italienisch'], [norsk]: ['italiensk'] },
@@ -87,10 +87,10 @@ const vocables = (german, norsk) => [
   { [german]: ['Möchtet ihr auch spanisch lernen?'], [norsk]: ['Vil dere også lære spansk?'] },
   { [german]: ['Wo können wir sitzen?'], [norsk]: ['Hvor kan vi sitte?'] },
   { [german]: ['Wo seid ihr im Urlaub?'], [norsk]: ['Hvor er dere på ferie?'] },
-  { [german]: ['Woher kommst du?'], [norsk]: ['Hvor er du fra?'] },
+  { [german]: ['Woher kommst du?'], [norsk]: ['Hvor er du fra?', 'Hvor kommer du fra?'] },
   { [german]: ['Wie geht es dir?'], [norsk]: ['Hvordan har du det?', 'Hvordan går det?'] },
-  { [german]: ['Danke, mir geht es gut.'], [norsk]: ['Takk, ganske bra.'] },
-  
+  { [german]: ['Danke, mir geht es gut.', 'Danke, ganz gut.'], [norsk]: ['Takk, ganske bra.'] },
+
   // Old vocabulary
   { [german]: ['nie'], [norsk]: ['aldri'] },
   { [german]: ['dass'], [norsk]: ['at'] },

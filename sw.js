@@ -1,4 +1,4 @@
-// version 10
+// version 11
 
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open('norsk').then(cache => cache.addAll([
