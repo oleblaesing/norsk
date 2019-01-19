@@ -196,7 +196,7 @@ const vocables = (german, norsk) => [
   { [german]: ['Das ist hier so üblich'], [norsk]: ['Det er skikk og bruk'] },
   { [german]: ['Der Unterschied zwischen A und B'], [norsk]: ['Forskjellen på A og B'] },
   { [german]: ['Han bruker å komme tidlig'], [norsk]: ['Er kommt normalerweise früh', 'Er kommt üblicherweise früh'] },
-  { [german]: ['In Norwegen ist man weniger formal als in Deutschland'], [norsk]: ['I Norge er man mindre formell ein i Tyskland'] },
+  { [german]: ['In Norwegen ist man weniger formal als in Deutschland'], [norsk]: ['I Norge er man mindre formell enn i Tyskland'] },
   { [german]: ['Frauen machen noch immer mehr Hausarbeit als Männer'], [norsk]: ['Kvinner gjør fortsatt mer husarbeid enn menn'] },
   { [german]: ['Ich weiß noch nicht'], [norsk]: ['Jeg vet ikke ennå'] },
   { [german]: ['Das ist richtig', 'Das stimmt', 'Ich stimme zu'], [norsk]: ['Det er riktig'] },
