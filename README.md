@@ -2,7 +2,7 @@
 
 Norwegisch lernen
 
-## Vorraussetzungen
+## Voraussetzungen
 
 Du brauchst `make` und `docker`.
 
