@@ -206,7 +206,7 @@ const vocables = (german, norsk) => [
   { [german]: ['Es gibt viele unterschiedliche Sorten Tee'], [norsk]: ['Det fins mange ulike typer te'] },
   { [german]: ['Ich habe keine Zeit'], [norsk]: ['Jeg har ikke tid'] },
   { [german]: ['Danke, es geht so'], [norsk]: ['Takk, sinn passe'] },
-  { [german]: ['Möchtest du nicht eine Tasse Tee habe?'], [norsk]: ['Vil du ikke ha en kopp te?'] },
+  { [german]: ['Möchtest du nicht eine Tasse Tee haben?'], [norsk]: ['Vil du ikke ha en kopp te?'] },
   { [german]: ['Doch gerne'], [norsk]: ['Jo gjerne'] },
   { [german]: ['Ich habe keinen Durst'], [norsk]: ['Jeg er ikke tørst'] },
   { [german]: ['Ich habe keinen Hunger, ich möchte ein Bier'], [norsk]: ['Jeg er ikke sulten, jeg vil en øl'] },
