@@ -25,11 +25,21 @@ const startApp = (words) => {
     return german
   }
 
+  const formatToCompare = (x) => {
+    let result = x.toLowerCase()
+
+    if (['.', '!', '?'].includes(result.slice(-1))) {
+      result = result.slice(0, result.length - 1)
+    }
+
+    return result
+  }
+
   let currentWord = null
   let currentLanguage = null
   const isMatchingAnswer = answer => currentWord[getOtherLanguage(currentLanguage)]
-    .map(x => x.toLowerCase())
-    .includes(answer.toLowerCase())
+    .map(formatToCompare)
+    .includes(formatToCompare(answer))
 
   const drawNext = () => {
     let pool = unsolvedWords
