@@ -222,6 +222,268 @@ const vocables = (german, norsk) => ({
     { [german]: ['Wer ist das? Ich weiß nicht'], [norsk]: ['Hvem er det? Jeg vet ikke'] },
     { [german]: ['Uns geht es gut, aber wir haben viel zu tun'], [norsk]: ['Vi har det bra, men vi har mye å gjøre'] },
   ],
+  'Leksjon 7': [
+    {
+      [german]: ['aktuell'],
+      [norsk]: ['aktuell'],
+    },
+    {
+      [german]: ['allein', 'alleine'],
+      [norsk]: ['alene'],
+    },
+    {
+      [german]: ['schon'],
+      [norsk]: ['allerede'],
+    },
+    {
+      [german]: ['viel zu'],
+      [norsk]: ['altfor'],
+    },
+    {
+      [german]: ['ernst'],
+      [norsk]: ['alvorlig'],
+    },
+    {
+      [german]: ['kindisch'],
+      [norsk]: ['barnslig'],
+    },
+    {
+      [german]: ['beginnen'],
+      [norsk]: ['begynne'],
+    },
+    {
+      [german]: ['binden'],
+      [norsk]: ['binde'],
+    },
+    {
+      [german]: ['ein Teil', 'Teil'],
+      [norsk]: ['en del', 'del'],
+    },
+    {
+      [german]: ['dieser, diesen'],
+      [norsk]: ['denne'],
+    },
+    {
+      [german]: ['diese'],
+      [norsk]: ['disse'],
+    },
+    {
+      [german]: ['ein Drama', 'Drama'],
+      [norsk]: ['et drama', 'drama'],
+    },
+    {
+      [german]: ['ein Dramatiker', 'Dramatiker'],
+      [norsk]: ['en dramatiker', 'dramatiker'],
+    },
+    {
+      [german]: ['nachher'],
+      [norsk]: ['etterpå'],
+    },
+    {
+      [german]: ['ein Film', 'Film'],
+      [norsk]: ['en film', 'film'],
+    },
+    {
+      [german]: ['es gibt', 'gibt es'],
+      [norsk]: ['det finnes', 'det fins', 'finnes', 'fins'],
+    },
+    {
+      [german]: ['ein Schriftsteller', 'Schriftsteller'],
+      [norsk]: ['en forfatter', 'forfatter'],
+    },
+    {
+      [german]: ['vor 5 Jahren'],
+      [norsk]: ['for 5 år siden'],
+    },
+    {
+      [german]: ['Freitag'],
+      [norsk]: ['fredag'],
+    },
+    {
+      [german]: ['Freizeit'],
+      [norsk]: ['fritid'],
+    },
+    {
+      [german]: ['vor 8 Uhr'],
+      [norsk]: ['før klokka 8'],
+    },
+    {
+      [german]: ['Welcher Film läuft im Kino?'],
+      [norsk]: ['Hvilken film går på kino?'],
+    },
+    {
+      [german]: ['Das geht dich nichts an.'],
+      [norsk]: ['Det har ikke du noe med.'],
+    },
+    {
+      [german]: ['halb'],
+      [norsk]: ['halv'],
+    },
+    {
+      [german]: ['eine Handlung', 'Handlung'],
+      [norsk]: ['ei handling', 'handling'],
+    },
+    {
+      [german]: ['zu Hause'],
+      [norsk]: ['hjemme'],
+    },
+    {
+      [german]: ['welcher'],
+      [norsk]: ['hvilken'],
+    },
+    {
+      [german]: ['falls', 'wenn'],
+      [norsk]: ['hvis'],
+    },
+    {
+      [german]: ['wieso', 'wieso das?'],
+      [norsk]: ['hvordan det?'],
+    },
+    {
+      [german]: ['wieder'],
+      [norsk]: ['igjen'],
+    },
+    {
+      [german]: ['gestern'],
+      [norsk]: ['i går'],
+    },
+    {
+      [german]: ['ein Kino', 'Kino'],
+      [norsk]: ['en kino', 'kino'],
+    },
+    {
+      [german]: ['bekannt'],
+      [norsk]: ['kjent'],
+    },
+    {
+      [german]: ['sehr bekannt'],
+      [norsk]: ['godt kjent'],
+    },
+    {
+      [german]: ['eine Liebe', 'Liebe'],
+      [norsk]: ['ei kjærlighet', 'kjærlighet'],
+    },
+    {
+      [german]: ['beklagen', 'klagen'],
+      [norsk]: ['klage'],
+    },
+    {
+      [german]: ['eine Uhr', 'Uhr'],
+      [norsk]: ['ei klokke', 'klokke'],
+    },
+    {
+      [german]: ['kuschlig'],
+      [norsk]: ['koselig'],
+    },
+    {
+      [german]: ['streiten'],
+      [norsk]: ['krangle'],
+    },
+    {
+      [german]: ['Viertel'],
+      [norsk]: ['kvart'],
+    },
+    {
+      [german]: ['gleich'],
+      [norsk]: ['lik'],
+    },
+    {
+      [german]: ['trotzdem'],
+      [norsk]: ['likevel'],
+    },
+    {
+      [german]: ['Samstag'],
+      [norsk]: ['lørdag'],
+    },
+    {
+      [german]: ['danke gleichfalls'],
+      [norsk]: ['takk i like måte'],
+    },
+    {
+      [german]: ['wann'],
+      [norsk]: ['når'],
+    },
+    {
+      [german]: ['ob'],
+      [norsk]: ['om'],
+    },
+    {
+      [german]: ['über', 'nach'],
+      [norsk]: ['over'],
+    },
+    {
+      [german]: ['spät'],
+      [norsk]: ['sent'],
+    },
+    {
+      [german]: ['letzt', 'letzte'],
+      [norsk]: ['sist', 'siste'],
+    },
+    {
+      [german]: ['letzt', 'letzte'],
+      [norsk]: ['sist', 'siste'],
+    },
+    {
+      [german]: ['Eifersucht'],
+      [norsk]: ['sjalusi'],
+    },
+    {
+      [german]: ['ein Ort', 'eine Stelle', 'Ort', 'Stelle'],
+      [norsk]: ['et sted', 'sted'],
+    },
+    {
+      [german]: ['sauer'],
+      [norsk]: ['sur'],
+    },
+    {
+      [german]: ['antworten'],
+      [norsk]: ['svare'],
+    },
+    {
+      [german]: ['dann'],
+      [norsk]: ['så'],
+    },
+    {
+      [german]: ['denken'],
+      [norsk]: ['tenke'],
+    },
+    {
+      [german]: ['früh'],
+      [norsk]: ['tidlig'],
+    },
+    {
+      [german]: ['verbringen'],
+      [norsk]: ['tilbringe'],
+    },
+    {
+      [german]: ['müde'],
+      [norsk]: ['trøtt'],
+    },
+    {
+      [german]: ['Quatsch'],
+      [norsk]: ['tulle'],
+    },
+    {
+      [german]: ['unglaublich'],
+      [norsk]: ['utrolig'],
+    },
+    {
+      [german]: ['wiegen'],
+      [norsk]: ['veie'],
+    },
+    {
+      [german]: ['vermutlich'],
+      [norsk]: ['vel'],
+    },
+    {
+      [german]: ['mitkommen'],
+      [norsk]: ['være med'],
+    },
+    {
+      [german]: ['aufwachen'],
+      [norsk]: ['våkne'],
+    },
+  ],
   Unsortiert: [
     { [german]: ['nie'], [norsk]: ['aldri'] },
     { [german]: ['dass'], [norsk]: ['at'] },
