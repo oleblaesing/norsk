@@ -21,8 +21,38 @@ body {
   padding: 15px;
 }
 
-form#form {
+form#lection-chooser {
   display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 290px;
+}
+
+form#lection-chooser > span.action {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form#lection-chooser > button {
+  background-color: #eee;
+  border: none;
+  border-radius: 3px;
+  color: #0e5b6d;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  min-height: 36px;
+  padding: 7px 15px;
+  text-align: center;
+}
+
+form#lection-chooser > button:focus,
+form#lection-chooser > button:active {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, .2);
+  outline: 0;
+}
+
+form#form {
+  display: none;
   flex-direction: column;
   margin: 0 auto;
   width: 290px;
@@ -173,4 +203,9 @@ span#points {
 
 span#missed {
   border-color: #E0777D;
+}
+
+p.guide {
+  margin-top: 30px;
+  text-align: center;
 }

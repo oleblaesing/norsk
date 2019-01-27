@@ -9,9 +9,13 @@
     <meta name="theme-color" content="#4c96a8">
     <link rel="apple-touch-icon" sizes="192x192" href="/norsk/192x192.png">
     <link rel="apple-touch-icon" sizes="512x512" href="/norsk/512x512.png">
-    <link rel="stylesheet" href="/norsk/style.css">
   </head>
   <body>
+    <form id="lection-chooser">
+      <span class="action">
+        Wähle eine Lektion
+      </span>
+    </form>
     <form id="form">
       <button hidden id="update" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -21,7 +25,7 @@
           <path fill="currentColor" d="M15.65 4.35A8 8 0 1 0 17.4 13h-2.22a6 6 0 1 1-1-7.22L11 9h7V2z"/>
         </svg>
         <p>
-          Pull to update now!
+          Update!
         </p>
       </button>
       <div>
@@ -39,9 +43,18 @@
         vs.
         <span id="missed"></span>
       </div>
+      <p class="guide">
+        Einfach nach unten ziehen und loslassen, um von vorne zu beginnen.
+      </p>
     </form>
     <script src="/norsk/update.js"></script>
     <script src="/norsk/vocables.js"></script>
     <script src="/norsk/main.js"></script>
+    <script>
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = '/norsk/style.css'
+      document.head.appendChild(link)
+    </script>
   </body>
 </html>
