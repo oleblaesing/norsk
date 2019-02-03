@@ -260,7 +260,7 @@ const vocables = (german, norsk) => ({
       [norsk]: ['en del', 'del'],
     },
     {
-      [german]: ['dieser, diesen'],
+      [german]: ['dieser', 'diesen'],
       [norsk]: ['denne'],
     },
     {
@@ -325,10 +325,14 @@ const vocables = (german, norsk) => ({
     },
     {
       [german]: ['zu Hause'],
+      [norsk]: ['hjem'],
+    },
+    {
+      [german]: ['nach Hause'],
       [norsk]: ['hjemme'],
     },
     {
-      [german]: ['welcher'],
+      [german]: ['welcher', 'welchen'],
       [norsk]: ['hvilken'],
     },
     {
