@@ -9,6 +9,67 @@
     <meta name="theme-color" content="#4c96a8">
     <link rel="apple-touch-icon" sizes="192x192" href="/norsk/192x192.png">
     <link rel="apple-touch-icon" sizes="512x512" href="/norsk/512x512.png">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        font-size: 62.5%;
+      }
+
+      html,
+      body {
+        height: 100%;
+        min-height: 460px;
+      }
+
+      body {
+        background-image: linear-gradient(145deg, #4C86A8, #59C9A5);
+        color: white;
+        font-family: sans-serif;
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 15px;
+      }
+
+      form#lection-chooser {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 290px;
+      }
+
+      form#lection-chooser > span.action {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      form#lection-chooser > button {
+        background-color: #eee;
+        border: none;
+        border-radius: 3px;
+        color: #0e5b6d;
+        font-size: 1.1em;
+        margin-bottom: 15px;
+        min-height: 36px;
+        padding: 7px 15px;
+        text-align: center;
+      }
+
+      form#lection-chooser > button:focus,
+      form#lection-chooser > button:active {
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, .2);
+        outline: 0;
+      }
+
+      form#form {
+        display: none;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 290px;
+      }
+    </style>
   </head>
   <body>
     <form id="lection-chooser">
