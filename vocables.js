@@ -1,4 +1,178 @@
 const vocables = (german, norsk) => ({
+  'Leksjon 8': [
+    {
+      [norsk]: ['altså'],
+      [german]: ['also'],
+    },
+    {
+      [norsk]: ['ei avis', 'en avis', 'avis'],
+      [german]: ['eine Zeitung', 'Zeitung'],
+    },
+    {
+      [norsk]: ['derfor'],
+      [german]: ['deshalb'],
+    },
+    {
+      [norsk]: ['flere'],
+      [german]: ['mehr'],
+    },
+    {
+      [norsk]: ['flest'],
+      [german]: ['am meisten'],
+    },
+    {
+      [norsk]: ['de fleste'],
+      [german]: ['die meisten'],
+    },
+    {
+      [norsk]: ['en forelder', 'foredler', 'foreldre'],
+      [german]: ['Elternteil'],
+    },
+    {
+      [norsk]: ['fornøyd'],
+      [german]: ['zufrieden'],
+    },
+    {
+      [norsk]: ['fremover'],
+      [german]: ['vorwärts'],
+    },
+    {
+      [norsk]: ['en frokost', 'frokost'],
+      [german]: ['Frühstück'],
+    },
+    {
+      [norsk]: ['før'],
+      [german]: ['früher', 'bevor'],
+    },
+    {
+      [norsk]: ['føre til noe'],
+      [german]: ['zu etwas führen'],
+    },
+    {
+      [norsk]: ['i morges'],
+      [german]: ['heute Morgen'],
+    },
+    {
+      [norsk]: ['en innbygger', 'innbygger'],
+      [german]: ['Einwohner'],
+    },
+    {
+      [norsk]: ['interessant'],
+      [german]: ['interessant'],
+    },
+    {
+      [norsk]: ['jo'],
+      [german]: ['ja'],
+    },
+    {
+      [norsk]: ['kriminell'],
+      [german]: ['kriminell'],
+    },
+    {
+      [norsk]: ['ei kvinne', 'en kvinne', 'kvinne'],
+      [german]: ['eine Frau', 'Frau'],
+    },
+    {
+      [norsk]: ['langt'],
+      [german]: ['weit'],
+    },
+    {
+      [norsk]: ['hvor langt'],
+      [german]: ['wie weit'],
+    },
+    {
+      [norsk]: ['lenge'],
+      [german]: ['lange'],
+    },
+    {
+      [norsk]: ['hvor lenge'],
+      [german]: ['wie lange'],
+    },
+    {
+      [norsk]: ['lide'],
+      [german]: ['leiden'],
+    },
+    {
+      [norsk]: ['likestilling'],
+      [german]: ['Gleichberechtigung'],
+    },
+    {
+      [norsk]: ['lønn'],
+      [german]: ['Lohn'],
+    },
+    {
+      [norsk]: ['mellom'],
+      [german]: ['zwischen'],
+    },
+    {
+      [norsk]: ['middag'],
+      [german]: ['Mittagessen'],
+    },
+    {
+      [norsk]: ['næringsliv'],
+      [german]: ['Wirtschaft'],
+    },
+    {
+      [norsk]: ['passe'],
+      [german]: ['passen'],
+    },
+    {
+      [norsk]: ['per'],
+      [german]: ['pro'],
+    },
+    {
+      [norsk]: ['provosere'],
+      [german]: ['provozieren'],
+    },
+    {
+      [norsk]: ['rekke'],
+      [german]: ['schaffen'],
+    },
+    {
+      [norsk]: ['rett'],
+      [german]: ['Recht'],
+    },
+    {
+      [norsk]: ['ha rett'],
+      [german]: ['Recht haben'],
+    },
+    {
+      [norsk]: ['selfrealisering'],
+      [german]: ['Selbstverwirklichung'],
+    },
+    {
+      [norsk]: ['situasjon'],
+      [german]: ['Situation'],
+    },
+    {
+      [norsk]: ['stå'],
+      [german]: ['stehen'],
+    },
+    {
+      [norsk]: ['svært'],
+      [german]: ['sehr'],
+    },
+    {
+      [norsk]: ['tillegg'],
+      [german]: ['Zusatz'],
+    },
+    {
+      [norsk]: ['i tillegg til'],
+      [german]: ['zusätzlich zu'],
+    },
+    {
+      [norsk]: ['ungdom'],
+      [german]: ['Jugend'],
+    },
+    {
+      [norsk]: ['utkomme'],
+      [german]: ['erscheinen'],
+    },
+    {
+      [norsk]: ['yrkesaktiv'],
+      [german]: ['berufstätig'],
+    },
+  ],
   'Leksjon 1': [
     { [german]: ['arbeiten'], [norsk]: ['arbeide'] },
     { [german]: ['alle'], [norsk]: ['alle'] },
